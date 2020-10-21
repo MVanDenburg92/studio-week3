@@ -50,6 +50,7 @@ var map = new mapboxgl.Map({
   style: 'mapbox://styles/mapbox/light-v10', // stylesheet location
   center: [-84.5, 38.05], // starting position
   zoom: 12 // starting zoom
+  .featureLayer.setGeoJSON(geojson);
 });
   
   
@@ -112,10 +113,8 @@ map.on('load', function() {
 });
   
 var punkvenues = {
-"type": "FeatureCollection",
-"name": "punkvenue",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::4269" } },
-"features": [
+type: "FeatureCollection",
+features: [
 { "type": "Feature", "properties": { Name: "40 Watt Club", "Address": "285 W Washington St", "City": "Athens", "State": "GA", "Country": "United States", "Zipcode": "30601", "Latitude": 33.958309, "Longitude": -83.379959 }, "geometry": { "type": "Point", "coordinates": [ -83.379959, 33.958309 ] } },
 { "type": "Feature", "properties": { Name: "100 Club", "Address": "100 Oxford Street", "City": "London", "State": "", "Country": "United Kingdom", "Zipcode": "", "Latitude": 51.51613, "Longitude": -0.13528 }, "geometry": { "type": "Point", "coordinates": [ -0.13528, 51.51613 ] } },
 { "type": "Feature", "properties": { Name: "924 Gilman Street", "Address": "924 Gilman St", "City": "Berkeley", "State": "CA", "Country": "United States", "Zipcode": "94710", "Latitude": 37.879505, "Longitude": -122.299296 }, "geometry": { "type": "Point", "coordinates": [ -122.299296, 37.879505 ] } },
@@ -168,20 +167,7 @@ var punkvenues = {
 ]
 };
 
-  map.on('load', function() {
-  map.addLayer({
-    id: 'punkvenues',
-    type: 'symbol',
-    source: {
-      type: 'geojson',
-      data: punkvenues
-    },
-    layout: {
-      'icon-image': 'hospital-15',
-      'icon-allow-overlap': true
-    },
-    paint: { }
-  });
+
     
   map.addSource('nearest-hospital', {
   type: 'geojson',
