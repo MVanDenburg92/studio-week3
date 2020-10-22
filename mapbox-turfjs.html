@@ -43,6 +43,14 @@
 <div id='map'></div>
 
 <script>
+  
+mapboxgl.accessToken = 'pk.eyJ1IjoibXZhbmRlbmJ1cmc5MiIsImEiOiJja2U4d2R5dDAyMHhwMnpwOGl6OGs2bmZ3In0.bjkT9KX_g4RVv1voVkvRnw';
+var map = new mapboxgl.Map({
+  container: 'map', // container id
+  style: 'mapbox://styles/mapbox/light-v10', // stylesheet location
+  center: [-84.5, 38.05], // starting position
+  zoom: 12 // starting zoom
+});
 
 </script>
 </body>
