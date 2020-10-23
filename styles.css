@@ -8,7 +8,7 @@ ul {
 
 li {
  float: left;
- border-right: 2px solid white;
+ border-right: 2px solid blue;
 }
 
 /* Add a border to all( but not the last) list items */
@@ -33,7 +33,7 @@ li a:hover {
 }
 
 .active {
- background-color: #a09f9f;
+ background-color: blue;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
