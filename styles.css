@@ -22,7 +22,9 @@ li a {
  text-align: left;
  padding: 15px 17px;
  text-decoration: none;
- font-size:medium; 
+ font-size:large; 
+ font-weight: 400;
+
 }
 
 /* Links will change color when hovered over */
