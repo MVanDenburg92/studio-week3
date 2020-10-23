@@ -61,7 +61,13 @@ header {
 header::before {
 	content: "";
 	display: block;
-	position: absolute;
+	position:relative;
+ 	 overflow:hidden;
+ 	 display:flex;
+ 	 flex-wrap: wrap;
+  	justify-content: center;
+  	align-items: flex-start;
+  	align-content: flex-start;
 	left: 0;
 	bottom: 6em;
 	width: 100%;
@@ -80,7 +86,7 @@ h1 {
 	font-size: calc(2em + 2vw);
 	font-weight: 400;
 	letter-spacing: .01em;
-	padding: 10rem 0 0 4.5rem;
+	padding: 5rem 0 0 4.5rem;
 	text-shadow: .022em .022em .022em #111;
 	color: #fff;
 }
