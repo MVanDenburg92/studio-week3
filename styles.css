@@ -52,7 +52,7 @@ body {
 
  #map {
       position: absolute;
-      top: 400px;
+      top: 200px;
       bottom: 0;
       width: 100%;
     }
