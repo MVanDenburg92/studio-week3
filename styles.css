@@ -55,6 +55,13 @@ header {
 	height: var(--heading-height);
 }
 
+ #map {
+      position: absolute;
+      top: 400px;
+      bottom: 0;
+      width: 100%;
+    }
+
 /* Create angled background with 'before' pseudo-element */
 header::before {
 	content: "";
