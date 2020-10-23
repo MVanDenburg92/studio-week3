@@ -33,7 +33,6 @@ li a:hover {
  background-color: #a09f9f;
 }
 
-
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 
 :root {
@@ -48,7 +47,6 @@ body {
 	font-family: "Roboto", Arial, sans-serif;
 	min-height: 100vh;
 	background-color: #101010;
-	padding: calc(var(--heading-height) + 1.5vw) 4em 0;
 }
 
 header {
@@ -83,10 +81,10 @@ header::before {
 }
 
 h1 {
-	font-size: calc(2em + 2vw);
-	font-weight: 400;
+	font-size: calc(2.8em + 2.6vw);
+	font-weight: 700;
 	letter-spacing: .01em;
-	padding: 5rem 0 0 4.5rem;
+	padding: 10rem 0 0 4.5rem;
 	text-shadow: .022em .022em .022em #111;
 	color: #fff;
 }
